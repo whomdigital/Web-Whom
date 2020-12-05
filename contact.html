@@ -4,6 +4,12 @@
 <head>
 
     <meta charset="utf-8">
+    <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
 
     <!-- Page Title -->
     <title>Contact - Whom</title>
@@ -287,10 +293,17 @@
 
                                 <!-- Button -->
                                 <div class="send-wrap">
-                                    <button type="submit" class="button button-block">Submit</button>
+                                    <button type="submit" uk-toggle="target: #my-id" role="submit" class="button button-block">Submit</button>
                                 </div>
                                 <!--/ Button -->
-
+                                <!-- This is the modal -->
+                                <div id="my-id" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body">
+                                        <h2 class="uk-modal-title">Message sent</h2>
+                                        <button class="uk-modal-close" type="button" style="color: black;">Close</button>
+                                    </div>
+                                </div>
+                                <!-- End modal -->
                             </form>
                         </div>
                         <!--/Contact Form -->
